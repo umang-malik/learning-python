@@ -1,0 +1,33 @@
+This file contains the Git commands I learned while following the Udacity course for learning Git/Github. 
+
+
+
+diff/fc fileold filenew to find the difference between two files.
+git diff (without arguments) to see chanegs made and not added to the staging area.
+git diff commit1 commit2 for diff between two commits
+git diff --stages for difference between staging area and  repository
+git show commit-id for changes itnroduced in the commit
+git log (--stat for stats) (--graph for branches) (--oneline for clean output) (master another-branch) (-n <number of entries you want to see>)
+git clone <repo>
+git config --global color.ui auto
+git config (--global) user.email "email"
+git config (--global) user.name "name"
+git checkout <commit id>
+git checkout <branch> to checkout to a branch.
+git checkout -b <new-branchname> to create and checkout to new branch.
+git init
+git status
+git add <filename>
+git commit (-m "message")
+git reset --hard will reset any changes in working directory or stagin area.
+git branch <branchname> to create a new branch
+git branch -d <branchname> to delete a branch
+git merge <branch-to-be-merged> to merge the branch to the current branch (usually run this from master)  (Run this as "git merge master branch-name") (You can also use remote branches)   
+git remote to see remotes.
+git remote add <remote-name> <remote-link> (remote name origin by convention) (-v for more details)
+git push <remote-name> <local-branch-to-push> 
+git pull <remote-name> <local-branch-to-push> 
+git fetch <remote-name> to update local copies of remote branches.
+Pull requests are made to merge branches to the master. Make a new branch, push it to github.
+    If someone made changes to the master branch while you are working on a diff branch, u may have to merge the new master to your diff branch to get updated with the changes.
+    
